@@ -1,37 +1,232 @@
+:root {
+  /* Cores */
+  /* Background  */
+  --fundo-cinza: #181e25;
+  --fundo-cinza-claro: #2b323c;
+  --fundo-cinza-escuro: #10151b;
+
+  --fundo-azul-claro: #00b1d3;
+  --fundo-azul-escuro: #005982;
+
+  /* Fontes */
+  --fonte-branca: #fff;
+  --fonte-azul: #00a8dd;
+  --fonte-cinza: #a5a5a5;
+
+  /* Bordas-Botoes */
+  --borda-azul: #004e69;
+  --borda-preta: #000;
+
+  /* Botões */
+  --botao-azul: #00a8dd;
+  --botao-cinza: #a5a5a5;
+}
+
+
 body {
-  header {
-    width: 50%;
-    align-items: flex-start;
+  color: var(--fonte-branca);
+  background-color: var(--fundo-cinza);
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding: .9rem;
+  font-size: 10px;
 
-    img {
-      font-size: 13px;
-    }
+}
 
-    h1 {
-      font-weight: 300;
-      color: red;
-    }
+.container {
+  container-type: inline-size;
+  width: 350px;
 
-    p {
-      .font-color {
-        color: blue;
-      }
-    }
+}
 
-    ul li p {
-      color: blue;
-    }
+.fonte-media {
+  font-size: 16px;
+  margin: none;
+}
 
-    button {
-      border-radius: 10px solid blue;
-      color: white;
-    }
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.font-blue {
+  margin-left: 3px;
+  margin-right: 3px;
+  color: var(--fonte-azul);
+}
+
+.logo {
+  width: 2.5rem;
+  padding: .3rem;
+  border-radius: 8px;
+  background-color: var(--fonte-branca);
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--fonte-branca);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+h4 {
+  color: var(--fonte-azul);
+}
+
+.container .courses-area span {
+  font-size: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .5rem;
+}
+
+span img {
+  margin-right: 4px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* CURSOS */
+.courses {
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--fundo-cinza-claro);
+
+}
+
+.courses ul li {
+  background-color: var(--fundo-cinza-claro);
+  font-size: .8rem;
+  text-decoration: none;
+  width: 20%;
+  height: auto;
+}
+
+ul li p {
+  color: var(--fonte-azul);
+}
+
+button {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-color: var(--borda-azul);
+  background-color: var(--botao-azul);
+  border-radius: 8px;
+  color: var(--fonte-branca);
+
+}
+
+.alert-area {
+  font-size: 9px;
+  text-align: justify;
+  background-color: var(--fundo-cinza-escuro);
+  width: auto;
+  margin: 8px;
+  padding: 8px;
+}
+
+.container-final {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-pass {
+  text-align: center;
+  background-color: var(--fundo-cinza-claro);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.final-area {
+  background-color: var(--fundo-cinza);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.lira {
+  background-color: var(--fundo-cinza-claro);
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.lira p {
+  text-align: center;
+}
+
+.first-pass {
+  background-color: var(--fundo-cinza-claro);
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  width: 60%;
+  margin-left: 10px;
+}
+
+.first-pass h2 {
+  display: grid;
+  grid-gap: 20px;
+
+}
+
+.first-pass img {
+  position: relative;
+  margin-left: 450px;
+}
+
+.start {
+  background-color: var(--fundo-azul-claro);
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 8px;
+  height: 70px;
+  margin: 30px 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.start button {
+  background-color: var(--fundo-cinza-claro);
+  width: 40%;
+  font-size: 13px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+footer img {
+  width: 30px;
+}
+
+footer a {
+  font-size: 10px;
+  color: var(--fonte-branca);
+  text-decoration: none;
 }
