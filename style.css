@@ -66,9 +66,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: bold;
-  text-align: center;
 }
 
 h3 {
@@ -98,10 +97,19 @@ span img {
   flex-direction: row;
 }
 
+.container-courses {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: flex-start;
+  justify-content: space-around
+}
 
 /* CURSOS */
 .courses {
   border-radius: 10px;
+  padding-left: 10px;
+
+  width: 22%;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -110,16 +118,14 @@ span img {
 
 }
 
-.courses ul li {
-  background-color: var(--fundo-cinza-claro);
-  font-size: .8rem;
-  text-decoration: none;
-  width: 20%;
-  height: auto;
+.courses p {
+  font-size: 9px;
+
 }
 
-ul li p {
-  color: var(--fonte-azul);
+.courses img {
+  width: 16px;
+  margin-right: 4px;
 }
 
 button {
@@ -172,6 +178,24 @@ button {
   width: 40%;
 }
 
+.cabecalho-lira {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--fundo-cinza);
+  width: 102%;
+}
+
+.cabecalho-lira h3 {
+  font-size: 14px;
+  text-align: initial;
+}
+
+.cabecalho-lira img {
+  margin-right: 8px;
+  padding: 8px;
+}
+
 .lira p {
   text-align: center;
 }
@@ -181,8 +205,8 @@ button {
   border-radius: 10px;
   border-radius: 10px;
   padding: 8px;
-  width: 60%;
-  margin-left: 10px;
+  width: 55%;
+  margin-left: 15px;
 }
 
 .first-pass h2 {
@@ -202,7 +226,7 @@ button {
   font-size: 10px;
   padding: 8px;
   height: 70px;
-  margin: 30px 0 10px;
+  margin: 45px 0 10px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
